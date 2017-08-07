@@ -64,7 +64,7 @@ RCT_EXPORT_MODULE()
   [ctrl presentViewController:composeCtl animated:YES completion: nil];
 }
 
-RCT_EXPORT_METHOD(shareOnFacebook:(NSDictionary *)options
+RCT_EXPORT_METHOD(FacebookDialog:(NSDictionary *)options
                   callback: (RCTResponseSenderBlock)callback)
 {
   [self share:SLServiceTypeFacebook options:options callback: callback];

@@ -53,7 +53,7 @@ public class ReactNativeSocialKitModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void shareOnFacebook(ReadableMap options, Callback callback) {
+  public void FacebookDialog(ReadableMap options, Callback callback) {
     try {
       Intent shareIntent;
 
