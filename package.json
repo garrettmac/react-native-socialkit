@@ -1,0 +1,45 @@
+{
+  "name": "react-native-socialkit",
+  "version": "1.1.0",
+  "description": "Use the iOS native Twitter and Facebook share view from react native",
+  "author": {
+    "name": "Kim Døfler",
+    "email": "garrettmac@gmail.com"
+  },
+  "keywords": [
+    "react",
+    "twitter",
+    "facebook",
+    "SLComposeViewController",
+    "RCTBridgeModule",
+    "Social",
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "mobile",
+    "ui",
+    "react native facebook",
+    "react native twitter"
+  ],
+  "homepage": "https://github.com/garrettmac/react-native-socialkit",
+  "bugs": {
+    "url": "https://github.com/garrettmac/react-native-socialkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/garrettmac/react-native-socialkit.git"
+  },
+  "scripts": {},
+  "_npmUser": {
+    "name": "garrettmac",
+    "email": "garrettmac@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "Kim Døfler",
+      "email": "garrettmac@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "main": "react-native-socialkit.js"
+}
