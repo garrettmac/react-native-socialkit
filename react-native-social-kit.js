@@ -13,7 +13,7 @@ module.exports = {
       return ReactNativeSocialKit.tweet(params, callback);
     }
   },
-  TwitterDialog: function(params, callback) {
+  RedditDialog: function(params, callback) {
     if (!(params['link'] || params['text'])) {
       callback("missing_link_or_text");
     } else {
