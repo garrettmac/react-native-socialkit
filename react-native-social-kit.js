@@ -3,13 +3,21 @@
  */
 
 var ReactNativeSocialKit = require('react-native').NativeModules.ReactNativeSocialKit;
-console.log(" require('react-native').NativeModules: ",require('react-native').NativeModules);
+var RNSocialKit = require('react-native').NativeModules.RNSocialKit;
+console.log(" require('react-native').NativeModules: ",RNSocialKit);
 module.exports = {
   TwitterDialog: function(params, callback) {
     if (!(params['link'] || params['text'])) {
       callback("missing_link_or_text");
     } else {
       return ReactNativeSocialKit.tweet(params, callback);
+    }
+  },
+  TwitterDialog: function(params, callback) {
+    if (!(params['link'] || params['text'])) {
+      callback("missing_link_or_text");
+    } else {
+      return RNSocialKit.addEvent(params, callback);
     }
   },
   FacebookDialog: function(params, callback) {
