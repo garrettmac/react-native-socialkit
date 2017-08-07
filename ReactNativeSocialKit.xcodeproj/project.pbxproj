@@ -16,6 +16,8 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* ReactNativeSocialKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeSocialKitTests.m */; };
+		0E67BB4C1F38046200B2E25A /* RNSocialKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E67BB4A1F38046200B2E25A /* RNSocialKit.swift */; };
+		0E67BB4D1F38046200B2E25A /* RNSocialKitBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E67BB4B1F38046200B2E25A /* RNSocialKitBridge.m */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
@@ -23,7 +25,6 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		8D78D7851AEC2B470061970B /* ReactNativeSocialKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D78D7841AEC2B470061970B /* ReactNativeSocialKit.m */; };
 		8D78D7911AEC5B270061970B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D78D7901AEC5B270061970B /* Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +120,9 @@
 		00E356EE1AD99517003FC87E /* ReactNativeSocialKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativeSocialKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ReactNativeSocialKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeSocialKitTests.m; sourceTree = "<group>"; };
+		0E67BB491F38046200B2E25A /* RNSocialKit-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RNSocialKit-Bridging-Header.h"; path = "iOS/RNSocialKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		0E67BB4A1F38046200B2E25A /* RNSocialKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RNSocialKit.swift; path = iOS/RNSocialKit.swift; sourceTree = "<group>"; };
+		0E67BB4B1F38046200B2E25A /* RNSocialKitBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNSocialKitBridge.m; path = iOS/RNSocialKitBridge.m; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ReactNativeSocialKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeSocialKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = iOS/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = iOS/AppDelegate.m; sourceTree = "<group>"; };
@@ -129,8 +133,6 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		8D78D7831AEC2B470061970B /* ReactNativeSocialKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactNativeSocialKit.h; path = iOS/ReactNativeSocialKit.h; sourceTree = "<group>"; };
-		8D78D7841AEC2B470061970B /* ReactNativeSocialKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReactNativeSocialKit.m; path = iOS/ReactNativeSocialKit.m; sourceTree = "<group>"; };
 		8D78D7901AEC5B270061970B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -239,6 +241,9 @@
 		13B07FAE1A68108700A75B9A /* ReactNativeSocialKit */ = {
 			isa = PBXGroup;
 			children = (
+				0E67BB491F38046200B2E25A /* RNSocialKit-Bridging-Header.h */,
+				0E67BB4A1F38046200B2E25A /* RNSocialKit.swift */,
+				0E67BB4B1F38046200B2E25A /* RNSocialKitBridge.m */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -246,8 +251,6 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				8D78D7831AEC2B470061970B /* ReactNativeSocialKit.h */,
-				8D78D7841AEC2B470061970B /* ReactNativeSocialKit.m */,
 			);
 			name = ReactNativeSocialKit;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = GGH293W8JK;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -539,8 +543,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				8D78D7851AEC2B470061970B /* ReactNativeSocialKit.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				0E67BB4D1F38046200B2E25A /* RNSocialKitBridge.m in Sources */,
+				0E67BB4C1F38046200B2E25A /* RNSocialKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +575,7 @@
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -590,6 +596,7 @@
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -608,6 +615,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
@@ -620,6 +628,9 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ReactNativeSocialKit;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeSocialKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -627,6 +638,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
@@ -639,6 +651,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ReactNativeSocialKit;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeSocialKit-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
