@@ -14,13 +14,15 @@ module.exports = {
     }
   },
   RedditDialog: function(params, callback) {
-    if (!(params['link'] || params['text'])) {
-      callback("missing_link_or_text");
-    } else {
-      return RNSocialKit.RedditDialog(params, callback);
-    }
+    // if (!(params['link'] || params['text'])) {
+    //   callback("missing_link_or_text");
+    // } else {
+      return ReactNativeSocialKit.RedditDialog(params, callback);
+    // }
   },
-  Module: RNSocialKit,
+  Module:function(params, callback) {
+     return [RNSocialKit,ReactNativeSocialKit]
+   },
   FacebookDialog: function(params, callback) {
     if (!(params['link'] || params['text'])) {
       callback("missing_link_or_text");
