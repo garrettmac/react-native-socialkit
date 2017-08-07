@@ -20,6 +20,7 @@ module.exports = {
       return RNSocialKit.addEvent(params, callback);
     }
   },
+  Module: RNSocialKit,
   FacebookDialog: function(params, callback) {
     if (!(params['link'] || params['text'])) {
       callback("missing_link_or_text");
