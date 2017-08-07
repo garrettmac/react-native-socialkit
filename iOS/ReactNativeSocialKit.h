@@ -9,5 +9,5 @@
 
 #import <React/RCTBridgeModule.h>
 
-@interface ReactNativeSocialKit : NSObject <RCTBridgeModule>
+@interface RNSocialKit : NSObject <RCTBridgeModule>
 @end
