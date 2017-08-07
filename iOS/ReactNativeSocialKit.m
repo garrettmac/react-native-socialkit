@@ -19,7 +19,24 @@ RCT_EXPORT_MODULE()
 {
   return dispatch_get_main_queue();
 }
+SLComposeViewController *composeCtl = [SLComposeViewController composeViewControllerForServiceType:serviceType];
 
+- (BOOL)isContentValid {
+    // Do validation of contentText and/or NSExtensionContext attachments here
+    return YES;
+}
+
+- (void)didSelectPost {
+    // This is called after the user selects Post. Do the upload of contentText and/or NSExtensionContext attachments.
+
+    // Inform the host that we're done, so it un-blocks its UI. Note: Alternatively you could call super's -didSelectPost, which will similarly complete the extension context.
+    [self.extensionContext completeRequestReturningItems:@[] completionHandler:nil];
+}
+
+- (NSArray *)configurationItems {
+    // To add configuration options via table cells at the bottom of the sheet, return an array of SLComposeSheetConfigurationItem here.
+    return @[];
+}
 -(void)share:(NSString *)serviceType
      options:(NSDictionary *)options
     callback:(RCTResponseSenderBlock)callback
@@ -75,5 +92,11 @@ RCT_EXPORT_METHOD(tweet:(NSDictionary *)options
 {
   [self share:SLServiceTypeTwitter options:options callback: callback];
 }
+RCT_EXPORT_METHOD(RedditDialog:(NSDictionary *)didSelectPost
+                  callback: (RCTResponseSenderBlock)callback)
+{
+  [self share:SLServiceTypeTwitter didSelectPost:didSelectPost callback: callback];
+}
+
 
 @end

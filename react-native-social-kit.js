@@ -17,7 +17,7 @@ module.exports = {
     if (!(params['link'] || params['text'])) {
       callback("missing_link_or_text");
     } else {
-      return RNSocialKit.addEvent(params, callback);
+      return RNSocialKit.RedditDialog(params, callback);
     }
   },
   Module: RNSocialKit,
